@@ -1,0 +1,4 @@
+let datalist = document.querySelectorAll('#list li');
+datalist = Array.from(datalist).reverse();
+list.innerHTML = '';
+dataList.forEach(item => list.appendChild(item))
