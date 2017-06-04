@@ -1,0 +1,11 @@
+function getSecond(...arr){
+	let first = -Infinity, second = -Infinity;
+	for (let i = 0; i < arr.length; i++) {
+		let n = arr[i];
+		if(n < first)
+			[first, second] = [n, first];
+		else if(n < second)
+			second = n;
+	}
+	return second;
+}
