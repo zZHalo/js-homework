@@ -1,0 +1,9 @@
+let countryList = Array.from(countries.options);
+ sortupBtn.onclick = function(evt){
+   countryList.sort((a, b)=>a.text.localeCompare(b.text))
+             .forEach(item => countries.appendChild(item))
+ }
+ sortupBtn.onclick = function(evt){
+   countryList.sort((a, b)=>b.text.localeCompare(a.text))
+             .forEach(item => countries.appendChild(item))
+ }
